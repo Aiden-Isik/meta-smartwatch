@@ -7,6 +7,6 @@ base_addr=0x00000000
 kernel_offset=0x00008000
 ramdisk_offset=0x02000000
 tags_offset=0x01e00000
-cmd_line='androidboot.hardware=lucky7 user_debug=31 maxcpus=4 msm_rtb.filter=0x3F pm_levels.sleep_disabled=1 selinux=0 SYSTEMD_CGROUP_ENABLE_LEGACY_FORCE=1'
+cmd_line='stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure SYSTEMD_CGROUP_ENABLE_LEGACY_FORCE=1 console=ram arm64.nopauth arm64.nomte nokaslr kasan=off clocksource=arch_sys_counter clk_ignore_unused of_devlink=0 firmware_class.path=/vendor/firmware reserve-bcm=0xffffff80f8e00000 s3c2410_wdt.tmr_atboot=1 s3c2410_wdt.tmr_margin=80 rcupdate.rcu_expedited=1 init_on_alloc=0'
 board="lucky7"
 format=gzip
