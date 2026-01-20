@@ -1,12 +1,12 @@
 kernel=%%KERNEL%%
 ramdisk=%%RAMDISK%%
 page_size=2048
-kernel_size=3669168
-ramdisk_size=2751911
+kernel_size=47524352
+ramdisk_size=2807296
 base_addr=0x80100000
 kernel_offset=0x00008000
 ramdisk_offset=0x02000000
 tags_offset=0x01e00000
 cmd_line='stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure SYSTEMD_CGROUP_ENABLE_LEGACY_FORCE=1 console=ram arm64.nopauth arm64.nomte nokaslr kasan=off clocksource=arch_sys_counter clk_ignore_unused of_devlink=0 firmware_class.path=/vendor/firmware reserve-bcm=0xffffff80f8e00000 s3c2410_wdt.tmr_atboot=1 s3c2410_wdt.tmr_margin=80 rcupdate.rcu_expedited=1 init_on_alloc=0'
 board=""
-format=gzip
+format=raw

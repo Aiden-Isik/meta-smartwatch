@@ -2,10 +2,10 @@ require recipes-kernel/linux/linux.inc
 inherit gettext
 
 SECTION = "kernel"
-SUMMARY = "Android kernel for the Samsung Galaxy Watch FE"
+SUMMARY = "Android kernel for the Samsung Galaxy Watch 4/FE"
 HOMEPAGE = "https://github.com/Aiden-Isik/linux-android-lucky7"
 LICENSE = "GPL-2.0-only"
-LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
+LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 COMPATIBLE_MACHINE = "lucky7"
 
 # Use an older version of gcc (gcc >= 9 doesn't boot.)
@@ -17,7 +17,7 @@ SRC_URI = "git://github.com/Aiden-Isik/linux-android-lucky7;branch=android13-5.1
            "
 SRCREV = "5b5176b536f9318dd5362b3ba387944b0d087f6a"
 LINUX_VERSION ?= "5.15"
-PV = "${LINUX_VERSION}+tiramisu"
+PV = "${LINUX_VERSION}+t"
 S = "${WORKDIR}/git"
 B = "${S}"
 
