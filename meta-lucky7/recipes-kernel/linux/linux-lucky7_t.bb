@@ -29,7 +29,7 @@ SRC_URI = "git://github.com/Aiden-Isik/linux-android-lucky7;branch=android13-5.1
            "
 SRCREV = "05f7ccb07fdedffca6826bdc6b7555d6e2d3d502"
 LINUX_VERSION ?= "5.15"
-PV = "${LINUX_VERSION}+t"
+PV = "${LINUX_VERSION}+tiramisu"
 S = "${WORKDIR}/git"
 B = "${S}"
 
