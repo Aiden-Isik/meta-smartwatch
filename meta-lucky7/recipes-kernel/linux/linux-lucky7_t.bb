@@ -18,9 +18,6 @@ TARGET_SOC = "s5e5515"
 export ARCH
 ARCH = "arm64"
 
-# Override the default for hybris watches and set the kernel image type to uncompressed/raw
-KERNEL_IMAGETYPE = "Image"
-
 DEPENDS += "rsync-native"
 
 SRC_URI = "git://github.com/Aiden-Isik/linux-android-lucky7;branch=android13-5.15;protocol=https \
