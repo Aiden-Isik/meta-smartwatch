@@ -34,6 +34,13 @@ do_configure:prepend() {
     install -m 644 -D ${UNPACKDIR}/defconfig ${WORKDIR}/defconfig
 }
 
+# Samsung's vendor kernel doesn't build DTB by default.
+# So let's just build it and tack it onto the end of the image here.
+do_compile:append() {
+        make dts
+        cat "${KERNEL_OUTPUT_DIR}/dts/${KERNEL_DEVICETREE}" >> "${KERNEL_OUTPUT_DIR}/${KERNEL_IMAGETYPE}"
+}
+
 do_install:append() {
     rm -rf ${D}/usr/src/usr/
 }
