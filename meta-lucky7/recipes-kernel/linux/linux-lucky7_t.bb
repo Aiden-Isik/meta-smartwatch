@@ -6,7 +6,7 @@ SUMMARY = "Android kernel for the Samsung Galaxy Watch 4/FE"
 HOMEPAGE = "https://github.com/Aiden-Isik/linux-android-lucky7"
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-COMPATIBLE_MACHINE = "lucky7"
+COMPATIBLE_MACHINE = "kernel-lucky7"
 
 # Set the required environment variables to correctly build the kernel
 export PLATFORM_VERSION
@@ -17,9 +17,6 @@ export TARGET_SOC
 TARGET_SOC = "s5e5515"
 export ARCH
 ARCH = "arm64"
-
-# Override the default for hybris watches and set the kernel image type to uncompressed/raw
-KERNEL_IMAGETYPE = "Image"
 
 DEPENDS += "rsync-native"
 
