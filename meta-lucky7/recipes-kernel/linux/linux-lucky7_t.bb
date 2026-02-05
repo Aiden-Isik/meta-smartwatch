@@ -33,11 +33,11 @@ B = "${S}"
 
 do_configure:prepend() {
     install -m 644 -D ${UNPACKDIR}/defconfig ${WORKDIR}/defconfig
-    install -m 644 ${UNPACKDIR}/s5e5515_fe.dtb ${S}/arch/arm64/boot/dts/${KERNEL_DEVICETREE}
 }
 
 do_install:append() {
     rm -rf ${D}/usr/src/usr/
+    install -m 644 ${UNPACKDIR}/s5e5515_fe.dtb ${S}/arch/arm64/boot/dts/${KERNEL_DEVICETREE}
 }
 
 inherit mkbootimg
