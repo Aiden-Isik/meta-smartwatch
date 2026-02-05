@@ -37,7 +37,7 @@ do_configure:prepend() {
 
 do_install:append() {
     rm -rf ${D}/usr/src/usr/
-    install -m 644 ${UNPACKDIR}/s5e5515_fe.dtb ${S}/arch/arm64/boot/dts/${KERNEL_DEVICETREE}
+    cp ${UNPACKDIR}/s5e5515_fe.dtb ${S}/arch/arm64/boot/dts/${KERNEL_DEVICETREE}
 }
 
 inherit mkbootimg
