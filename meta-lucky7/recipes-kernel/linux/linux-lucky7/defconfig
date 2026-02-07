@@ -507,10 +507,8 @@ CONFIG_EFI_STUB=y
 CONFIG_EFI=y
 # CONFIG_DMI is not set
 CONFIG_UH=y
-CONFIG_RKP=y
-CONFIG_KDP=y
-CONFIG_KDP_CRED=y
-CONFIG_KDP_NS=y
+# CONFIG_RKP is not set
+# CONFIG_KDP is not set
 # end of Boot options
 
 #
@@ -7394,10 +7392,7 @@ CONFIG_CC_HAS_ZERO_CALL_USED_REGS=y
 # end of Memory initialization
 # end of Kernel hardening options
 
-CONFIG_SECURITY_DEFEX=y
-# CONFIG_DEFEX_KERNEL_ONLY is not set
-CONFIG_SECURITY_DEFEX_USER=y
-CONFIG_SECURITY_DEFEX_SINGLE_FILE=y
+# CONFIG_SECURITY_DEFEX is not set
 # end of Security options
 
 CONFIG_CRYPTO=y
