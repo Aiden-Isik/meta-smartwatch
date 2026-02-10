@@ -27,7 +27,7 @@ SRC_URI = "git://android.googlesource.com/kernel/common;branch=android13-5.15;pr
            file://img_info \
            file://s5e5515_fe.dtb"
 
-LIC_FILES_CHKSUM_ack = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
+LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 LIC_FILES_CHKSUM_vendor = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 SRCREV_ack = "9b493559553bf33903a81ec85f91f085357b69e2"
