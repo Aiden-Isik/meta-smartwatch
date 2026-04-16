@@ -1,1 +1,1 @@
-PACKAGECONFIG:append:lucky7 = " kmsro lima"
+PACKAGECONFIG:append:lucky7 = " kmsro panfrost"
