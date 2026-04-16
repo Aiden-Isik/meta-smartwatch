@@ -1,4 +1,4 @@
-FILES:${PN} += "${D}/usr/share/psplash.png"
+INSANE_SKIP:${PN} += "installed-vs-shipped"
 
 do_install:append:lucky7() {
     install -d ${D}/usr/share/
