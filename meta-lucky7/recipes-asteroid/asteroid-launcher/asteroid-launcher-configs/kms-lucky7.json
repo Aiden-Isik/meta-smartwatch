@@ -1,6 +1,6 @@
 {
   "device": "/dev/dri/card0",
   "outputs": [
-    { "name": "Virtual1", "mode": "320x320" }
+    { "name": "Virtual1", "mode": "396x396" }
   ]
 }
