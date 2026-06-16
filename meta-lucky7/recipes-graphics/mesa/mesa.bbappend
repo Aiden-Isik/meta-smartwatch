@@ -1,1 +1,1 @@
-PACKAGECONFIG:append:lucky7 = " kmsro panfrost"
+PACKAGECONFIG:append:lucky7 = " kmsro panfrost gallium-llvm"
