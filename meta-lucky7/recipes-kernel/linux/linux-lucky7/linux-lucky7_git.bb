@@ -13,4 +13,4 @@ SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 B = "${S}"
 
-inherit mkbootimg
+inherit uniloader mkbootimg
